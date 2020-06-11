@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+    <div class="py-5">
+
+      
+      <h2 class="card-title h2 my-4 py-2">Wilkommen auf mein Python-Blog</h2>
+      <p class="mb-4 pb-2 px-md-5 mx-md-5">In meinem Blog möchte ich gerne Ihnen meine eigenen Dokumente teilen, um die Sprache Python für Anfänger zu unterrichten...</p>
+      
+
+    </div>
+  </div>
+</div>
+<ul>
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Überschrift: {{article.title}} - Inhalt:{{article.content}}</li>
+    {% endfor %}
+</ul>
+<h3>Was ist die Sprache des Programms Python?</h3>
+<hr>
+    <p>
+    Python ist eine universelle Programmiersprache, die hauptsächlich objektorientierte Programmierung und bis zu einem gewissen Grad funktionale Programmierung unterstützt. Python, dessen erste Version 1991 entwickelt wurde, ist heute sehr beliebt und hat aufgrund seiner relativen Leichtigkeit, großen Standardbibliothek und dynamischen Struktur eine weit verbreitete Benutzergruppe erreicht.
+
+Die Programmiersprache Python, die in der Wissenschafts- und Computertechnik häufig bevorzugt wird, hat seit den 2000er Jahren parallel zu den Hardware- und Softwareentwicklungen einen breiten Anwendungsbereich gewonnen. Sprachen, die wie Python interpretiert werden, beanspruchen viel Speicher, da sie Datenstrukturen auf hoher Ebene verwenden. Dies ist jedoch kein großer Nachteil mehr, da es heutzutage leicht ist, hohe Speicherebenen zu erreichen. In Bezug auf Software brachte die Zunahme des Open-Source-Codes und des freien Softwareflusses, die mit dem Internet einhergingen, die koordinierten Arbeiten der Entwickler über das Internet und über die entwickelten Tools. Dies ist einer der wichtigen Gründe für die zunehmende Verwendung von Python.
+
+Basierend auf der kostenlosen Open Source-Logik können die Standardbibliothek, die Entwicklungstools und viele andere Bibliotheken von Python kostenlos als Open Source-Code heruntergeladen werden, ohne dass eine Lizenz erforderlich ist. Auf der anderen Seite gibt es einige Vorteile der Einfachheit und der Interpretation einer Sprache: Es ist relativ einfach, neue Bibliotheken der Sprache zu lernen und zu erkunden, da es möglich ist, zuerst interaktiv am Interpreter zu arbeiten. Der zweite Vorteil ist, dass Sie beim Schreiben eines neuen Programms schnell experimentieren können. Schließlich können die Berechnungen Schritt für Schritt angezeigt und die Formgebung des vorliegenden Problems verfolgt werden.
+    </p>
+    <hr>
+
+{% endblock %}

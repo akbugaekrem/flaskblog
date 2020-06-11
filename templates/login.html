@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+<h3>Melden Sie auf mein Blog an</h3>
+<hr>
+<form method="post">
+    {{ render_field(form.username,class="form-control") }}
+    {{ render_field(form.password,class="form-control") }}
+    
+<button type="submit" class="btn btn-primary">Anmelden</button>
+
+</form>
+{% endblock %}
